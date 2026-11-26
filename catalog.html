@@ -1,0 +1,44 @@
+  <main>
+    <h1 class="page-title">Каталог</h1>
+
+    <div class="filters">
+      <strong>Фильтры:</strong>
+      <button class="btn on" data-filter="all">Все</button>
+      <button class="btn" data-filter="m">Мужские</button>
+      <button class="btn" data-filter="w">Женские</button>
+      <div class="price-box">
+        Цена: от <input type="number" id="priceFrom" placeholder="0">
+        до <input type="number" id="priceTo" placeholder="10000">
+        <button class="btn btn-fill" id="applyPrice">Применить</button>
+      </div>
+    </div>
+
+    <div class="cards" id="catalogCards">
+      <div class="card" data-gender="m" data-price="4900">
+        <div class="photo" style="background:#232a7c; color:#232a7c"><svg><use href="#bottle"/></svg></div>
+        <h4>Blue Night</h4><div class="kind">Мужской аромат</div><div class="price">4 900 руб.</div>
+      </div>
+      <div class="card" data-gender="w" data-price="5600">
+        <div class="photo" style="background:#c1568f; color:#c1568f"><svg><use href="#bottle"/></svg></div>
+        <h4>Rose Garden</h4><div class="kind">Женский аромат</div><div class="price">5 600 руб.</div>
+      </div>
+      <div class="card" data-gender="m" data-price="6300">
+        <div class="photo" style="background:#5b3a1e; color:#5b3a1e"><svg><use href="#bottle"/></svg></div>
+        <h4>Dark Wood</h4><div class="kind">Мужской аромат</div><div class="price">6 300 руб.</div>
+      </div>
+      <div class="card" data-gender="w" data-price="5200">
+        <div class="photo" style="background:#8d6fb5; color:#8d6fb5"><svg><use href="#bottle"/></svg></div>
+        <h4>White Lily</h4><div class="kind">Женский аромат</div><div class="price">5 200 руб.</div>
+      </div>
+      <div class="card" data-gender="m" data-price="4200">
+        <div class="photo" style="background:#0f5c63; color:#0f5c63"><svg><use href="#bottle"/></svg></div>
+        <h4>Ocean Breeze</h4><div class="kind">Мужской аромат</div><div class="price">4 200 руб.</div>
+      </div>
+      <div class="card" data-gender="w" data-price="4700">
+        <div class="photo" style="background:#d08a3c; color:#d08a3c"><svg><use href="#bottle"/></svg></div>
+        <h4>Sweet Vanilla</h4><div class="kind">Женский аромат</div><div class="price">4 700 руб.</div>
+      </div>
+    </div>
+
+    <div class="pagination"><span>&lsaquo;</span><span class="on">1</span><span>2</span><span>3</span><span>&rsaquo;</span></div>
+  </main>
