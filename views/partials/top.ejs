@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <!-- Рисунок флакона (используется во всех карточках) -->
+  <svg width="0" height="0" style="position:absolute">
+    <symbol id="bottle" viewBox="0 0 80 125">
+      <rect x="28" y="2" width="24" height="12" rx="2" fill="#fff" opacity=".9"/>
+      <rect x="34" y="14" width="12" height="12" fill="#fff" opacity=".8"/>
+      <rect x="6" y="26" width="68" height="95" rx="10" fill="#fff" opacity=".85"/>
+      <rect x="18" y="60" width="44" height="30" rx="3" fill="currentColor" opacity=".35"/>
+    </symbol>
+  </svg>
+
+  <!-- Единая шапка -->
+  <header>
+    <a href="/" class="logo">
+      <img src="/logo.png" alt="Логотип AROMA">
+      <span>AROMA</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="/" class="<%= active === 'home' ? 'active' : '' %>">Главная</a></li>
+      <li><a href="/catalog" class="<%= active === 'catalog' ? 'active' : '' %>">Каталог</a></li>
+      <li><a href="/contacts" class="<%= active === 'contacts' ? 'active' : '' %>">Контакты</a></li>
+    </ul>
+    <div class="auth-buttons">
+      <a href="#" class="cart-link">Корзина</a>
+      <button class="btn open-login-btn">Войти</button>
+      <button class="btn btn-fill open-register-btn">Регистрация</button>
+    </div>
+  </header>

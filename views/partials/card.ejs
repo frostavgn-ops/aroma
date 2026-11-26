@@ -1,0 +1,6 @@
+<div class="card" data-gender="<%= p.gender %>" data-price="<%= p.price %>">
+  <div class="photo <%= p.cls %>"><svg><use href="#bottle"/></svg></div>
+  <h4><%= p.name %></h4>
+  <div class="kind"><%= p.gender === 'm' ? 'Мужской аромат' : 'Женский аромат' %></div>
+  <div class="price"><%= p.price.toLocaleString('ru-RU') %> руб.</div>
+</div>

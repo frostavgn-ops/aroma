@@ -1,0 +1,95 @@
+  <!-- Модальное окно: Авторизация -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <button class="close-btn">&times;</button>
+      <h3>Авторизация</h3>
+      <form id="loginForm" novalidate>
+        <div class="form-group">
+          <label>Логин:</label>
+          <input type="text" name="login">
+          <span class="error-msg" data-for="login"></span>
+        </div>
+        <div class="form-group">
+          <label>Пароль:</label>
+          <input type="password" name="password">
+          <span class="error-msg" data-for="password"></span>
+        </div>
+        <div id="loginGlobalError" class="error-msg"></div>
+        <div id="loginSuccess" class="success-msg"></div>
+        <button type="submit" class="btn btn-fill" style="width:100%">Войти</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Модальное окно: Регистрация -->
+  <div id="registerModal" class="modal">
+    <div class="modal-content wide">
+      <button class="close-btn">&times;</button>
+      <h3>Регистрация</h3>
+      <form id="registerForm" novalidate>
+        <div class="form-group">
+          <label>Имя *</label>
+          <input type="text" name="name">
+          <span class="error-msg" data-for="name"></span>
+        </div>
+        <div class="form-group">
+          <label>Фамилия *</label>
+          <input type="text" name="surname">
+          <span class="error-msg" data-for="surname"></span>
+        </div>
+        <div class="form-group">
+          <label>Отчество</label>
+          <input type="text" name="patronymic">
+          <span class="error-msg" data-for="patronymic"></span>
+        </div>
+        <div class="form-group">
+          <label>Логин *</label>
+          <input type="text" name="login">
+          <span class="error-msg" data-for="login"></span>
+        </div>
+        <div class="form-group">
+          <label>Email *</label>
+          <input type="text" name="email">
+          <span class="error-msg" data-for="email"></span>
+        </div>
+        <div class="form-group">
+          <label>Пароль *</label>
+          <input type="password" name="password">
+          <span class="error-msg" data-for="password"></span>
+        </div>
+        <div class="form-group">
+          <label>Повторите пароль *</label>
+          <input type="password" name="password_repeat">
+          <span class="error-msg" data-for="password_repeat"></span>
+        </div>
+        <div class="form-group checkbox-group">
+          <label><input type="checkbox" name="rules"> Я согласен с правилами регистрации</label>
+          <span class="error-msg" data-for="rules"></span>
+        </div>
+        <div id="regSuccess" class="success-msg"></div>
+        <button type="submit" class="btn btn-fill" style="width:100%">Создать аккаунт</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-cols">
+      <div>
+        <strong style="display:block">Меню</strong>
+        <a href="/">Главная</a>
+        <a href="/catalog">Каталог</a>
+        <a href="/contacts">Контакты</a>
+      </div>
+      <div>
+        <strong style="display:block">Контакты</strong>
+        <span>+7 (999) 999-99-99</span><br>
+        <span>info@perfume.ru</span><br>
+        <span>Москва, ул. Вавилова</span>
+      </div>
+    </div>
+    <p class="copy">Все права защищены. 2026</p>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>

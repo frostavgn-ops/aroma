@@ -1,0 +1,45 @@
+<%- include('partials/top', { title: 'AROMA — парфюмерия', active: 'home' }) %>
+
+  <main>
+    <!-- Девиз сайта -->
+    <section class="hero">
+      <h1>AROMA — аромат, который говорит о вас</h1>
+      <p>Оригинальная парфюмерия для мужчин и женщин с доставкой по всей России.</p>
+    </section>
+
+    <!-- Слайдер (3 слайда) -->
+    <div class="slider">
+      <div class="slide s1 active">
+        <svg><use href="#bottle"/></svg>
+        <div><h3>Новая коллекция</h3><p>Свежие ароматы сезона уже в каталоге. Успейте попробовать первыми.</p></div>
+      </div>
+      <div class="slide s2">
+        <svg><use href="#bottle"/></svg>
+        <div><h3>Скидки до 30%</h3><p>Любимые женские ароматы по выгодным ценам до конца месяца.</p></div>
+      </div>
+      <div class="slide s3">
+        <svg><use href="#bottle"/></svg>
+        <div><h3>Подарочные наборы</h3><p>Красивая упаковка и бесплатная открытка к любому заказу.</p></div>
+      </div>
+      <button class="slider-btn prev">&#10094;</button>
+      <button class="slider-btn next">&#10095;</button>
+    </div>
+    <div class="dots">
+      <span class="dot active"></span><span class="dot"></span><span class="dot"></span>
+    </div>
+
+    <h2 class="section-title">Популярные категории</h2>
+    <div class="categories">
+      <a href="/catalog" class="category">Женские</a>
+      <a href="/catalog" class="category">Мужские</a>
+    </div>
+
+    <h2 class="section-title">Новинки</h2>
+    <div class="cards">
+      <% products.forEach(p => { %>
+        <%- include('partials/card', { p }) %>
+      <% }) %>
+    </div>
+  </main>
+
+<%- include('partials/bottom') %>
